@@ -67,6 +67,7 @@ nav {
 .nav_title {
     display: inline-block;
     margin:0 15px 0 0;
+    font-size: 0.95em;
 }
 .right_nav {
     display: inline-block;
@@ -165,7 +166,7 @@ select {
     margin: 0 20px 0 0;
     height: 175px;
     width: 290px;
-    background: #69c137;
+    background: #f73d97;
     border-radius: 6px;
     color: white;
     padding-top: 10px;
@@ -175,7 +176,7 @@ select {
     box-shadow: 3px 7px 11px 0px rgba(0,0,0,0.75);
 }
 .info_box:nth-of-type(2){
-    background: #f73d97;
+    background: #69c137;
 }
 .info_box:last-child{
     background: #ff7518;
@@ -188,3 +189,51 @@ select {
 
 }
 
+/* --------- */
+
+.solution_icons {
+    height: 420px;
+    background: url("img/weDoBG.png") repeat  0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
+}
+.solution_h{
+    padding: 60px 0 60px 0;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+}
+.si_li {
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
+    width: 130px;
+    text-align: center;
+}
+.si_li a {
+    text-decoration: none;
+    color: white;
+    vertical-align: top;
+}
+
+.solution_icons ul {
+    text-align: center;
+}
+
+.si_li p {
+    padding: 15px 0;
+    vertical-align: center;
+    text-decoration: none;
+    line-height: 130%;
+}
+.si_li:hover .icon_white {
+    display: none;
+}
+.icon_hov {
+    display: none;
+}
+.si_li:hover .icon_hov {
+    display: inline-block;
+}
+.solution_icons .lm {
+    margin: 30px auto;
+}
