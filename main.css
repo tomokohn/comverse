@@ -57,6 +57,7 @@ body {
 }
 header {
     height:80px;
+    z-index:10;
 }
 nav {
     display: inline-block;
@@ -103,6 +104,7 @@ select {
     box-shadow: inset 0px 13px 15px -13px rgba(0,0,0,0.6);
     overflow: hidden;
     height: 550px;
+    z-index: 20;
 }
 .slide1 {
     background: url(img/slide-bg-complexity.jpg);
@@ -160,6 +162,7 @@ select {
     background: #2592ff;
 }
 
+
 .info_box {
     display: inline-block;
     box-sizing: border-box;
@@ -194,6 +197,7 @@ select {
 .solution_icons {
     height: 420px;
     background: url("img/weDoBG.png") repeat  0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
+    z-index: 30;
 }
 .solution_h{
     padding: 60px 0 60px 0;
@@ -221,9 +225,11 @@ select {
 
 .si_li p {
     padding: 15px 0;
-    vertical-align: center;
     text-decoration: none;
     line-height: 130%;
+    vertical-align: text-top;
+    height: 65px;
+
 }
 .si_li:hover .icon_white {
     display: none;
@@ -236,4 +242,97 @@ select {
 }
 .solution_icons .lm {
     margin: 30px auto;
+}
+/*-------------*/
+
+.events {
+    background: url("img/news-and-events-bg.jpg") ;
+}
+.events .container{
+    height: 400px;
+}
+.events_h {
+    color: white;
+    text-align: center;
+    font-size: 2.1em;
+    padding: 70px 0 40px 0;
+    font-weight: 600;
+}
+.event_cont{
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+}
+.event_cont:last-of-type {
+    margin: 0;
+}
+.event_cont>h4 {
+    font-size: 2.0em;
+    color: white;
+}
+.event_box{
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+    width: 280px;
+    box-shadow: inset 3px 3px 17px 0px rgba(0,0,0,0.46);
+}
+.event_box:hover{
+    background: rgba(255, 255, 255, 0.85);
+}
+.event_box>p {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    line-height: 120%;
+}
+.date_box {
+    background: #3399cc;
+    border-radius: 4px;
+    display: inline-block;
+    color: white;
+    box-shadow: inset 3px 3px 17px 0px rgba(0,0,0,0.46);
+}
+.date_box>h4 {
+    font-size: 2em;
+    border-bottom: dotted 1px white;
+    padding: 10px;
+    font-weight: 700;
+}
+.date_box>p {
+    text-align: center;
+    padding: 5px 0;
+    line-height: 135%;
+
+}
+/*----------------*/
+
+.Success_Stories{
+    background: grey;
+    height: 500px;
+    border: solid 1px black;
+    z-index: 50;
+}
+
+.event_cont>a{
+    color: white;
+    margin-top: 5px;
+}
+.event_cont>a:hover{
+    color: black;
+}
+.event_box_icon_hov, .event_box_icon {
+    margin: 10px 5px 0 0;
+}
+.event_box_icon_hov {
+    display: none;
+}
+.event_cont>a:hover .event_box_icon_hov {
+    display: inline-block;
+}
+.event_cont>a:hover .event_box_icon {
+    display: none;
 }
