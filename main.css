@@ -242,11 +242,14 @@ select {
 }
 .solution_icons .lm {
     margin: 30px auto;
+    margin-top: 0px;
 }
 /*-------------*/
 
 .events {
     background: url("img/news-and-events-bg.jpg") ;
+    background-attachment: fixed;
+    background-size: 160% 100%;
 }
 .events .container{
     height: 400px;
@@ -308,15 +311,6 @@ select {
     line-height: 135%;
 
 }
-/*----------------*/
-
-.Success_Stories{
-    background: grey;
-    height: 500px;
-    border: solid 1px black;
-    z-index: 50;
-}
-
 .event_cont>a{
     color: white;
     margin-top: 5px;
@@ -335,4 +329,128 @@ select {
 }
 .event_cont>a:hover .event_box_icon {
     display: none;
+}
+/*----------------*/
+
+.Success_Stories{
+    background: #ececec;
+    height: 550px;
+    z-index: 50;
+}
+.Success_Stories h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 0 65px 0;
+}
+.up_box1 {
+    width: 342px;
+    height: 312px;
+    margin-right: 7px;
+    display: inline-block;
+    position: relative;
+}
+.up_box1>.sub_box_b {
+    width: 343px;
+    height: 210px;
+    background: #fff;
+    position: absolute;
+}
+.up_box1>.sub_box_s_1 {
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 220px;
+    left: 0px;
+    }
+.up_box1>.sub_box_s_2 {
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 220px;
+    left: 117px;
+}
+.up_box1>.sub_box_s_3 {
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 220px;
+    left: 235px;
+}
+
+.up_box2 {
+    width: 342px;
+    height: 312px;
+    margin-right: 7px;
+    display: inline-block;
+    position: relative;
+
+}
+.up_box2>.sub_box_s_1 {
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.up_box2>.sub_box_s_2 {
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 0px;
+    left: 117px;
+}
+.up_box2>.sub_box_s_3 {
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 0px;
+    left: 235px;
+}
+.up_box2>.sub_box_b {
+    width: 343px;
+    height: 210px;
+    position: absolute;
+    background: #fff;
+    top: 104px;
+}
+.up_box3 {
+    width: 230px;
+    height: 312px;
+    display: inline-block;
+    position: relative;
+}
+.sub_box_m{
+    position: absolute;
+    width: 225px;
+    height: 210px;
+    background: #fff;
+}
+.up_box3>.sub_box_s_1 {
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 220px;
+    left: 0px;
+}
+.up_box3>.sub_box_s_2 {
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 220px;
+    left: 117px;
+}
+.sub_box_s_hover {
+    background: url("img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
+    width: 107px;
+    height: 94px;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.sub_box_s_1:hover .sub_box_s_hover {
+    display: inline-block;
+}
+.sub_box_s_1:hover {
+
 }
