@@ -454,3 +454,67 @@ select {
 .sub_box_s_1:hover {
 
 }
+
+.picquote{
+    position: relative;
+}
+
+.picquote img{
+    padding: 10px;
+}
+blockquote {
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    line-height: 160%;
+    width: 210px;
+    color: gray;
+}
+
+blockquote::before,blockquote::after {
+    content: url('img/quote-grey.png');
+
+}
+
+.success_name {
+    border-top: 1px solid rgb(236, 236, 236);
+    padding: 5px 0;
+    margin: 10px;
+
+}
+.picquote {
+    margin-bottom: 25px;
+}
+.success_name>div {
+    display: inline-block;
+}
+.success_name img {
+    float: right;
+}
+.success_name h5 {
+    margin-top: 10px;
+    color: #2592ff;
+    font-size: 0.95em;
+}
+.success_name p {
+    color: rgba(0, 0, 0, 0.68);
+    margin: 5px 0 0 0;
+}
+.sub_box_m {
+    text-decoration: none;
+}
+.quote_m blockquote {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 30px;
+    line-height: 160%;
+
+
+}
+
+.Success_Stories .lm {
+
+    margin: 23px auto;
+}
+
