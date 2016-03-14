@@ -518,3 +518,118 @@ blockquote::before,blockquote::after {
     margin: 23px auto;
 }
 
+/*  ------------------   */
+
+footer{
+    background: url("img/footerBG.png")repeat  0 0;
+
+}
+.buttom_nav{
+    display: inline-block;
+    width: 70%;
+    margin: 15px 0;
+}
+.nav_bloc {
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 0 20px 0 0;
+
+}
+.nav_bloc h3{
+    font-weight: 600;
+    color: white;
+    padding: 0 0 20px 0;
+}
+.nav_bloc a {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+    line-height: 170%;
+}
+.nav_bloc a:hover {
+    text-decoration: underline;
+}
+
+.last_nav_bar li {
+    display: inline-block;
+    color: grey;
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+.last_nav_bar a {
+    color: grey;
+    text-decoration: none;
+}
+.last_nav_bar a:hover {
+    text-decoration: underline;
+}
+.news_bloc {
+    display: inline-block;
+    background: #3d3d3d;
+    width: 29%;
+    height: 300px;
+    vertical-align: top;
+    position: relative;
+}
+.news_bloc h3 {
+    color: #4c95b9;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    font-weight: 700;
+}
+.news_bloc_date {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+}
+.news_bloc_date p:first-of-type {
+    font-size: 3em;
+    font-weight: 700;
+
+}
+.news_bloc>p {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+}
+
+.news_bloc h3:last-of-type {
+    border-top: 1px solid grey;
+    padding: 30px 0 10px 0;
+    margin: 30px 10px 0;
+}
+.signup{
+    padding: 0 10px 10px 10px;
+}
+
+.signup button {
+    background: #3697ff;
+    background: -moz-linear-gradient(top, #7abcff 0%, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+    background: -webkit-linear-gradient(top, #7abcff 0%,#7abcff 0%,#60abf8 44%,#4096ee 100%);
+    background: linear-gradient(to bottom, #1f78ff 0%,#7abcff 0%,#60abf8 44%, #0769ee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.social_hov {
+    display: none;
+}
+.social:hover{
+    display: none;
+}
+.social_hov:hover{
+    display: inline-block;
+}
+
+
+
+
+
+
