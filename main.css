@@ -57,19 +57,78 @@ body {
 }
 header {
     height:80px;
-    z-index:10;
+
 }
 nav {
     display: inline-block;
 }
 .main_navi {
     display: inline-block;
+    position: relative;
 }
 .nav_title {
     display: inline-block;
-    margin:0 15px 0 0;
-    font-size: 0.95em;
+    border: 1px solid rgba(0,0,0,0);
+
 }
+.nav_title>a {
+    text-decoration: none;
+}
+.nav_title_text{
+    padding: 10px 10px 15px 10px;
+    font-size: 0.9em;
+    border: 1px solid rgba(0,0,0,0);
+
+}
+.nav_title:hover .nav_title_text {
+    border: 1px solid lightgray;
+    padding: 10px 10px 18px 10px;
+    box-shadow: -5px 9px 8px rgba(0,0,0,0.4);
+    background: #fff;
+}
+
+
+.sub_navi {
+    position: absolute;
+    background: #fff;
+    width: 903px;
+    top: 40px;
+    left: -200px;
+    box-shadow: -5px 9px 8px rgba(0,0,0,0.4);
+    display: none;
+}
+
+.nav_title:hover .sub_navi {
+    display:block;
+}
+.sub_navi ul {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    padding: 20px 0 0 20px;
+    line-height: 150%;
+    width: 230px;
+}
+.sub_navi a {
+    text-decoration: none;
+    color: #585951;
+    font-size: 0.8em;
+}
+
+.sub_navi .dropdown_headline {
+    color: #3399cc;
+    text-decoration: underline;
+}
+
+.sub_navi img {
+    border-left: 1px solid lightgray;
+    padding: 0 0 0 40px;
+    margin: 20px;
+}
+
+
+
+
 .right_nav {
     display: inline-block;
     box-sizing: border-box;
@@ -104,7 +163,7 @@ select {
     box-shadow: inset 0px 13px 15px -13px rgba(0,0,0,0.6);
     overflow: hidden;
     height: 550px;
-    z-index: 20;
+
 }
 .slide1 {
     background: url(img/slide-bg-complexity.jpg);
@@ -197,7 +256,6 @@ select {
 .solution_icons {
     height: 420px;
     background: url("img/weDoBG.png") repeat  0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
-    z-index: 30;
 }
 .solution_h{
     padding: 60px 0 60px 0;
@@ -335,7 +393,7 @@ select {
 .Success_Stories{
     background: #ececec;
     height: 550px;
-    z-index: 50;
+
 }
 .Success_Stories h2 {
     font-size: 2.5em;
@@ -593,8 +651,7 @@ footer{
     display: inline-block;
     color: white;
     position: absolute;
-    top: 60px;
-    left: 80px;
+
 }
 
 .news_bloc h3:last-of-type {
