@@ -170,7 +170,7 @@ select {
     height: 550px;
 }
 .slide_text {
-    padding: 50px 0 25px;
+    padding: 50px 0 0px;
     color: white;
 }
 .slide_h1 {
@@ -204,6 +204,7 @@ select {
     background: #2592ff;
 }
 
+
 .fa-caret-right {
     color: white;
     margin: 0 0 0 20px;
@@ -221,6 +222,9 @@ select {
     background: #2592ff;
 }
 
+.info_boxes {
+    margin-top: 20px;
+}
 
 .info_box {
     display: inline-block;
@@ -411,22 +415,92 @@ select {
 .up_box1>.sub_box_b {
     width: 343px;
     height: 210px;
+
+    position: absolute;
+    overflow: hidden;
+}
+.sub_box_top {
     background: #fff;
+    transform: translateY(0px);
+    transition: transform 1s;
+    height: 210px;
+}
+.sub_box_b:hover .sub_box_top {
+    transform: translateY(-210px);
+    transition: transform 1s;
+}
+
+.sub_box_b_hover{
+    background: #3AA5DA;
+    width: 343px;
+    height: 210px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
     position: absolute;
 }
+.sub_box_m_hover{
+    background: #3AA5DA;
+    width: 225px;
+    height: 210px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+}
+.sub_box_m:hover .sub_box_top {
+    transform: translateY(-210px);
+    transition: transform 1s;
+}
+.quote_blue_top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.sub_box_b_hover>p {
+    position: absolute;
+    top: 33px;
+    left: 41px;
+    padding-right: 15px;
+}
+.sub_box_m_hover>p {
+    position: absolute;
+    top: 33px;
+    left: 41px;
+    padding-right: 15px;
+}
+.sub_box_m_hover>.quote_blue_bot {
+    position: absolute;
+    top: 130px;
+    left: 110px;
+}
+.quote_blue_bot {
+    position: absolute;
+    top: 160px;
+    left: 270px;
+}
+
+
 .up_box1>.sub_box_s_1 {
     width: 107px;
     height: 94px;
     position: absolute;
     top: 220px;
     left: 0px;
-    }
+    overflow: hidden;
+}
+
+
+
 .up_box1>.sub_box_s_2 {
     width: 107px;
     height: 94px;
     position: absolute;
     top: 220px;
     left: 117px;
+    overflow: hidden;
 }
 .up_box1>.sub_box_s_3 {
     width: 107px;
@@ -434,7 +508,10 @@ select {
     position: absolute;
     top: 220px;
     left: 235px;
+    overflow: hidden;
 }
+
+
 
 .up_box2 {
     width: 342px;
@@ -450,6 +527,7 @@ select {
     position: absolute;
     top: 0px;
     left: 0px;
+    overflow: hidden;
 }
 .up_box2>.sub_box_s_2 {
     width: 107px;
@@ -457,6 +535,7 @@ select {
     position: absolute;
     top: 0px;
     left: 117px;
+    overflow: hidden;
 }
 .up_box2>.sub_box_s_3 {
     width: 107px;
@@ -464,6 +543,7 @@ select {
     position: absolute;
     top: 0px;
     left: 235px;
+    overflow: hidden;
 }
 .up_box2>.sub_box_b {
     width: 343px;
@@ -471,7 +551,10 @@ select {
     position: absolute;
     background: #fff;
     top: 104px;
+    overflow: hidden;
+
 }
+
 .up_box3 {
     width: 230px;
     height: 312px;
@@ -483,6 +566,7 @@ select {
     width: 225px;
     height: 210px;
     background: #fff;
+    overflow: hidden;
 }
 .up_box3>.sub_box_s_1 {
     width: 107px;
@@ -490,6 +574,8 @@ select {
     position: absolute;
     top: 220px;
     left: 0px;
+    overflow: hidden;
+
 }
 .up_box3>.sub_box_s_2 {
     width: 107px;
@@ -497,21 +583,30 @@ select {
     position: absolute;
     top: 220px;
     left: 117px;
+    overflow: hidden;
 }
+.sub_box_s_img{
+    position: absolute;
+    transform: translateY(0px);
+    transition: transform 1s;
+}
+.sub_box_s_1:hover .sub_box_s_img,.sub_box_s_2:hover .sub_box_s_img,.sub_box_s_3:hover .sub_box_s_img{
+    transform: translateY(-100px);
+    transition: transform 1s;
+}
+
+
 .sub_box_s_hover {
     background: url("img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
     width: 107px;
     height: 94px;
     position: absolute;
     top: 0;
-    display: none;
 }
-.sub_box_s_1:hover .sub_box_s_hover {
-    display: inline-block;
-}
-.sub_box_s_1:hover {
 
-}
+
+
+
 
 .picquote{
     position: relative;
@@ -550,7 +645,7 @@ blockquote::before,blockquote::after {
     float: right;
 }
 .success_name h5 {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     color: #2592ff;
     font-size: 0.95em;
 }
@@ -626,7 +721,7 @@ footer{
     display: inline-block;
     background: #3d3d3d;
     width: 29%;
-    height: 300px;
+    height: 310px;
     vertical-align: top;
     position: relative;
 }
@@ -674,14 +769,19 @@ footer{
     border-radius: 5px;
     border: none;
 }
+.social_icon{
+    display: inline-block;
+    padding: 5px 0 0 15px;
+}
 
 .social_hov {
     display: none;
 }
-.social:hover{
+.social_icon:hover  .social{
     display: none;
 }
-.social_hov:hover{
+
+.social_icon:hover  .social_hov{
     display: inline-block;
 }
 
