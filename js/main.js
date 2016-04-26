@@ -2,21 +2,32 @@
  * Created by Tomer on 12/04/2016.
  */
 
-function slides() {
-    var backgrounds = document.querySelectorAll('.bg'),
-        faSquares = document.querySelectorAll('.fa-square');
-    for (var i = 0; i < 4; i++) {
-        faSquares[i].addEventListener('click',
-            function () {
-                for (var j = 0; j < 4; j++) {
-                    faSquares[j].classList.remove("active-square");
-                    backgrounds[j].classList.remove("active-slide");
-                }
-                var hrefValue = this.getAttribute("href");
-                var target = document.querySelector(hrefValue);
-                target.className += " active-slide";
-                this.className += " active-square";
-            });
+
+$(function(){
+    console.log("loaded");
+    var slide = 0,
+        boxes = $('.s_mini_box');
+    console.log(boxes);
+    $('.s_mini_boxs').on('click','.s_mini_box',function() {
+        $('.s_mini_box').removeClass('actb');
+        $(this).addClass('actb');
+        slide = $(this).data('slide');
+        $('.the_slides').css('margin-left',slide + 'vw');
+    });
+
+    var rotate = function(){
+        $('.s_mini_box').removeClass('actb');
+        if (slide === -300){
+            slide = 0;
+            $('.the_slides').css('margin-left',slide + 'vw');
+            $(boxes[0]).addClass('actb');
+        }
+        else {
+            slide -= 100;
+            $('.the_slides').css('margin-left',slide + 'vw');
+            $(boxes[Math.abs(slide/100)]).addClass('actb');
+        }
+
     }
-};
-slides();
+    //setInterval(rotate,3000);
+});
