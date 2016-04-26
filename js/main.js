@@ -29,5 +29,5 @@ $(function(){
         }
 
     }
-    //setInterval(rotate,3000);
+    setInterval(rotate,3000);
 });
