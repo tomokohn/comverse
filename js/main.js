@@ -7,7 +7,6 @@ $(function(){
     console.log("loaded");
     var slide = 0,
         boxes = $('.s_mini_box');
-    console.log(boxes);
     $('.s_mini_boxs').on('click','.s_mini_box',function() {
         $('.s_mini_box').removeClass('actb');
         $(this).addClass('actb');
@@ -27,7 +26,9 @@ $(function(){
             $('.the_slides').css('margin-left',slide + 'vw');
             $(boxes[Math.abs(slide/100)]).addClass('actb');
         }
+        setTimeout(rotate,3000);
 
     }
-    setInterval(rotate,3000);
+    setTimeout(rotate,3000);
+    //setInterval(rotate,3000);
 });
